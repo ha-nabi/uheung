@@ -46,7 +46,7 @@ struct MainView: View {
                                     // In order to Moe the Card in Revers Direction (Parallax Effect)
                                 GeometryReader(content: { proxy in
                                     let cardSize = proxy.size
-//                                     Simple Parallax Effect (1)
+                                    // Simple Parallax Effect (1)
                                     let minX = proxy.frame(in: .scrollView).minX - 30.0
                                     
                                     Image(card.image)

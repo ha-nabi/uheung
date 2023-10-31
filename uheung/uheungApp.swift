@@ -11,7 +11,7 @@ import SwiftUI
 struct uheungApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            InboxView()
         }
     }
 }

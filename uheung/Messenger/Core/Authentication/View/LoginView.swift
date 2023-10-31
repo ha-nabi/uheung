@@ -57,7 +57,7 @@ struct LoginView: View {
                 // login button
                 
                 Button {
-                    print("Handle login")
+                    
                 } label: {
                     Text("로그인")
                         .font(.subheadline)

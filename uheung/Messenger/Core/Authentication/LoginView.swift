@@ -26,7 +26,7 @@ struct LoginView: View {
                 // text fields
                 
                 VStack {
-                    TextField("사용자 이름, 또는 이메일", text:$email)
+                    TextField("사용자 이름, 또는 이메일", text: $email)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
@@ -101,7 +101,8 @@ struct LoginView: View {
                 // sign up link
                 
                 NavigationLink {
-                    Text("Sign up View")
+                    RegistrationView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     HStack(spacing: 3) {
                         Text("계정이 없으신가요?")

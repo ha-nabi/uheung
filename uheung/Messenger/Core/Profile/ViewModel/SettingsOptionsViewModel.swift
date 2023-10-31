@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// 세팅 옵션 관련
 enum SettingsOptionsViewModel: Int, CaseIterable, Identifiable {
     case darkMode
     case activeStatus

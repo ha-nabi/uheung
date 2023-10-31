@@ -27,6 +27,8 @@
 		63667CAA2AF14A6600738A9E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667CA92AF14A6600738A9E /* ProfileView.swift */; };
 		63667CAC2AF14C8900738A9E /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667CAB2AF14C8900738A9E /* SettingsOptionsViewModel.swift */; };
 		63667CAE2AF15A8C00738A9E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667CAD2AF15A8C00738A9E /* ProfileViewModel.swift */; };
+		63667CB02AF160A100738A9E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667CAF2AF160A100738A9E /* User.swift */; };
+		63667CB32AF1646B00738A9E /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667CB22AF1646B00738A9E /* CircularProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		63667CA92AF14A6600738A9E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		63667CAB2AF14C8900738A9E /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		63667CAD2AF15A8C00738A9E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		63667CAF2AF160A100738A9E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		63667CB22AF1646B00738A9E /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,12 +181,13 @@
 		63667C8D2AF101B100738A9E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				63667C9C2AF1357600738A9E /* ActiveNow */,
+				63667C902AF101DB00738A9E /* Authentication */,
+				63667CB12AF1643500738A9E /* Components */,
+				63667C992AF1345B00738A9E /* Inbox */,
 				63667CA12AF13FB400738A9E /* NewMessage */,
 				63667CA62AF1470C00738A9E /* Profile */,
-				63667C9C2AF1357600738A9E /* ActiveNow */,
 				63667C8F2AF101D300738A9E /* Root */,
-				63667C992AF1345B00738A9E /* Inbox */,
-				63667C902AF101DB00738A9E /* Authentication */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -219,10 +224,10 @@
 		63667C922AF1020700738A9E /* Messenger */ = {
 			isa = PBXGroup;
 			children = (
-				63667C932AF1021E00738A9E /* Model */,
-				63667C8D2AF101B100738A9E /* Core */,
-				63667C8E2AF101BC00738A9E /* Service */,
 				63667C912AF101ED00738A9E /* Extension */,
+				63667C8D2AF101B100738A9E /* Core */,
+				63667C932AF1021E00738A9E /* Model */,
+				63667C8E2AF101BC00738A9E /* Service */,
 			);
 			path = Messenger;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 		63667C932AF1021E00738A9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				63667CAF2AF160A100738A9E /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +298,14 @@
 				63667CAD2AF15A8C00738A9E /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		63667CB12AF1643500738A9E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				63667CB22AF1646B00738A9E /* CircularProfileImageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,10 +438,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63667CB32AF1646B00738A9E /* CircularProfileImageView.swift in Sources */,
 				63667C8A2AF0B83300738A9E /* MainView.swift in Sources */,
 				63667CAA2AF14A6600738A9E /* ProfileView.swift in Sources */,
 				63667C952AF1024700738A9E /* LoginView.swift in Sources */,
 				63667C842AF0B7C800738A9E /* Tab.swift in Sources */,
+				63667CB02AF160A100738A9E /* User.swift in Sources */,
 				63667C9E2AF1358900738A9E /* ActiveNowView.swift in Sources */,
 				63667C5A2AF0B79F00738A9E /* ContentView.swift in Sources */,
 				63667CAC2AF14C8900738A9E /* SettingsOptionsViewModel.swift in Sources */,

@@ -19,6 +19,7 @@
 		63667C882AF0B82C00738A9E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667C872AF0B82C00738A9E /* HomeView.swift */; };
 		63667C8A2AF0B83300738A9E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667C892AF0B83300738A9E /* MainView.swift */; };
 		63667C952AF1024700738A9E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667C942AF1024700738A9E /* LoginView.swift */; };
+		63667C982AF10DEE00738A9E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667C972AF10DEE00738A9E /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		63667C872AF0B82C00738A9E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		63667C892AF0B83300738A9E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		63667C942AF1024700738A9E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		63667C972AF10DEE00738A9E /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +186,9 @@
 		63667C902AF101DB00738A9E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				63667C962AF10D9100738A9E /* View */,
 				63667C942AF1024700738A9E /* LoginView.swift */,
+				63667C972AF10DEE00738A9E /* RegistrationView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -212,6 +216,13 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		63667C962AF10D9100738A9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +362,7 @@
 				63667C882AF0B82C00738A9E /* HomeView.swift in Sources */,
 				63667C862AF0B7EE00738A9E /* TripCard.swift in Sources */,
 				63667C582AF0B79F00738A9E /* uheungApp.swift in Sources */,
+				63667C982AF10DEE00738A9E /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

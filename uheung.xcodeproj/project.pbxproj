@@ -26,6 +26,7 @@
 		63667CA32AF13FC400738A9E /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667CA22AF13FC400738A9E /* NewMessageView.swift */; };
 		63667CAA2AF14A6600738A9E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667CA92AF14A6600738A9E /* ProfileView.swift */; };
 		63667CAC2AF14C8900738A9E /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667CAB2AF14C8900738A9E /* SettingsOptionsViewModel.swift */; };
+		63667CAE2AF15A8C00738A9E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667CAD2AF15A8C00738A9E /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		63667CA22AF13FC400738A9E /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		63667CA92AF14A6600738A9E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		63667CAB2AF14C8900738A9E /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
+		63667CAD2AF15A8C00738A9E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				63667CAB2AF14C8900738A9E /* SettingsOptionsViewModel.swift */,
+				63667CAD2AF15A8C00738A9E /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				63667CAC2AF14C8900738A9E /* SettingsOptionsViewModel.swift in Sources */,
 				63667C882AF0B82C00738A9E /* HomeView.swift in Sources */,
 				63667CA02AF1386600738A9E /* InboxRowView.swift in Sources */,
+				63667CAE2AF15A8C00738A9E /* ProfileViewModel.swift in Sources */,
 				63667C862AF0B7EE00738A9E /* TripCard.swift in Sources */,
 				63667C582AF0B79F00738A9E /* uheungApp.swift in Sources */,
 				63667CA32AF13FC400738A9E /* NewMessageView.swift in Sources */,

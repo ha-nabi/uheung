@@ -33,18 +33,18 @@ enum SettingsOptionsViewModel: Int, CaseIterable, Identifiable {
         case .privacy: return "lock.circle.fill"
         case .notifications: return "bell.circle.fill"
         }
-        
-        var ImageBackgroundColor: Color {
-            switch self {
-                
-            case .darkMode: return .black
-            case .activeStatus: return Color(.systemGreen)
-            case .accessibility: return .black
-            case .privacy: return Color(.systemBlue)
-            case .notifications: return Color(.systemPurple)
-            }
+    }
+    
+    var ImageBackgroundColor: Color {
+        switch self {
+    
+        case .darkMode: return .black
+        case .activeStatus: return Color(.systemGreen)
+        case .accessibility: return .black
+        case .privacy: return Color(.systemBlue)
+        case .notifications: return Color(.systemPurple)
         }
     }
-        
-        var id: Int { return self.rawValue }
-    }
+    
+    var id: Int { return self.rawValue }
+}

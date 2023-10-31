@@ -18,6 +18,7 @@
 		63667C862AF0B7EE00738A9E /* TripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667C852AF0B7EE00738A9E /* TripCard.swift */; };
 		63667C882AF0B82C00738A9E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667C872AF0B82C00738A9E /* HomeView.swift */; };
 		63667C8A2AF0B83300738A9E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667C892AF0B83300738A9E /* MainView.swift */; };
+		63667C952AF1024700738A9E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63667C942AF1024700738A9E /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		63667C852AF0B7EE00738A9E /* TripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCard.swift; sourceTree = "<group>"; };
 		63667C872AF0B82C00738A9E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		63667C892AF0B83300738A9E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		63667C942AF1024700738A9E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		63667C562AF0B79F00738A9E /* uheung */ = {
 			isa = PBXGroup;
 			children = (
+				63667C922AF1020700738A9E /* Messenger */,
 				63667C822AF0B7AA00738A9E /* Model */,
 				63667C812AF0B7A700738A9E /* View */,
 				63667C5B2AF0B7A000738A9E /* Assets.xcassets */,
@@ -151,6 +154,62 @@
 			children = (
 				63667C832AF0B7C800738A9E /* Tab.swift */,
 				63667C852AF0B7EE00738A9E /* TripCard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63667C8D2AF101B100738A9E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				63667C902AF101DB00738A9E /* Authentication */,
+				63667C8F2AF101D300738A9E /* Root */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		63667C8E2AF101BC00738A9E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		63667C8F2AF101D300738A9E /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		63667C902AF101DB00738A9E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				63667C942AF1024700738A9E /* LoginView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		63667C912AF101ED00738A9E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		63667C922AF1020700738A9E /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				63667C932AF1021E00738A9E /* Model */,
+				63667C8D2AF101B100738A9E /* Core */,
+				63667C8E2AF101BC00738A9E /* Service */,
+				63667C912AF101ED00738A9E /* Extension */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		63667C932AF1021E00738A9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63667C8A2AF0B83300738A9E /* MainView.swift in Sources */,
+				63667C952AF1024700738A9E /* LoginView.swift in Sources */,
 				63667C842AF0B7C800738A9E /* Tab.swift in Sources */,
 				63667C5A2AF0B79F00738A9E /* ContentView.swift in Sources */,
 				63667C882AF0B82C00738A9E /* HomeView.swift in Sources */,

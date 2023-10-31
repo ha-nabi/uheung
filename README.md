@@ -8,4 +8,4 @@
 <img src="https://github.com/kangciu/SwiftUI_Study/assets/112779139/68382891-f3bd-4d9d-95bc-c8b8a4ab56d4.png" width="300" height="550"/>
 <br/>
 ### 2. Login Screen
-![스크린샷 2023-10-31 오후 7 13 25](https://github.com/kangciu/uheung/assets/112779139/36f06aee-5239-4f62-9f5f-3821b078d20f)
+![스크린샷 2023-10-31 오후 7 13 25]https://github.com/kangciu/uheung/assets/112779139/36f06aee-5239-4f62-9f5f-3821b078d20f

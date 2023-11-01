@@ -30,7 +30,7 @@ struct NewMessageView: View {
                         HStack {
                             CircularProfileImageView(user: User.MOCK_USER, size: .small)
                             
-                            Text("홍세희")
+                            Text("강어흥")
                                 .font(.subheadline)
                                 .fontWeight(.semibold)
                             

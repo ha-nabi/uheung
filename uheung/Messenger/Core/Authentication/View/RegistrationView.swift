@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    @State private var email = ""
-    @State private var password = ""
-    @State private var fullname = ""
+    @StateObject var viewModel = RegistrationViewModel()
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack {
@@ -26,21 +24,21 @@ struct RegistrationView: View {
             // text fields
             
             VStack {
-                TextField("사용자 이름, 또는 이메일", text: $email)
+                TextField("사용자 이름, 또는 이메일", text: $viewModel.email)
                     .font(.subheadline)
                     .padding(12)
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
                     .padding(.horizontal, 24)
                 
-                TextField("이름", text: $fullname)
+                TextField("이름", text: $viewModel.fullname)
                     .font(.subheadline)
                     .padding(12)
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
                     .padding(.horizontal, 24)
                 
-                SecureField(" 비밀번호", text: $password)
+                SecureField(" 비밀번호", text: $viewModel.password)
                     .font(.subheadline)
                     .padding(12)
                     .background(Color(.systemGray6))
@@ -49,14 +47,14 @@ struct RegistrationView: View {
             }
             
             Button {
-                print("Handle login")
+                Task { try await viewModel.createUser() }
             } label: {
                 Text("회원가입")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .frame(width: 360, height: 44)
-                    .background(Color(.systemBlue))
+                    .background(Color(.systemOrange))
                     .cornerRadius(10)
             }
             .padding(.vertical)
@@ -70,9 +68,11 @@ struct RegistrationView: View {
             } label: {
                 HStack(spacing: 3) {
                     Text("이미 가입되어 있으신가요?")
+                        .foregroundStyle(.orange)
                     
                     Text("로그인")
                         .fontWeight(.semibold)
+                        .foregroundStyle(.orange)
                 }
                 .font(.footnote)
             }

@@ -29,25 +29,19 @@ struct HomeView: View {
                 NavigationStack {
                     VStack {
                         Text("favorite")
-                            .foregroundStyle(Color.gray)
                     }
-                    .navigationTitle(Tab.favorite.title)
                 }
                 .setUpTab(.favorite)
                 NavigationStack {
                     VStack {
-                        Text("chat")
-                            .foregroundStyle(Color.gray)
+                        
                     }
-                    .navigationTitle(Tab.chat.title)
                 }
                 .setUpTab(.chat)
                 NavigationStack {
                     VStack {
                         Text("profile")
-                            .foregroundStyle(Color.gray)
                     }
-                    .navigationTitle(Tab.profile.title)
                 }
                 .setUpTab(.profile)
             }
@@ -75,7 +69,7 @@ struct HomeView: View {
             ForEach($allTabs) { $animatedTab in
                 let tab = animatedTab.tab
                 
-                VStack(spacing: 4) {
+                VStack(spacing: 0) {
                     // customizing home
 //                    if tab == .home {
 //                        Image(tab.rawValue)
@@ -94,12 +88,12 @@ struct HomeView: View {
                         .symbolEffect(bouncesDown ? .bounce.down.byLayer : .bounce.up.byLayer, value: animatedTab.isAnimating)
                     
                     Text(tab.title)
-                        .font(.caption2)
+                        .font(.headline)
                         .textScale(.secondary)
                 }
                 .frame(maxWidth: .infinity)
-                .foregroundStyle(activeTab == tab ? Color.primary : Color.gray.opacity(0.8))
-                .padding(.top, 15)
+                .foregroundStyle(activeTab == tab ? Color.orange : Color.gray.opacity(0.8))
+                .padding(.top, 8)
                 .contentShape(.rect)
                 // You Can Also Use Button, If you Choose to
                 .onTapGesture {

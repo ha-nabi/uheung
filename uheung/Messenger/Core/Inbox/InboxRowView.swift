@@ -13,11 +13,11 @@ struct InboxRowView: View {
             CircularProfileImageView(user: User.MOCK_USER, size: .medium)
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("홍세희")
+                Text("강어흥")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                 
-                Text("솔직히 저보다 나이 많으면 삼촌 아닌가요?")
+                Text("널 와아아앙 하고 물어버릴거야 완죤 무섭지?")
                     .font(.subheadline)
                     .foregroundColor(.gray)
                     .lineLimit(2)
@@ -25,7 +25,7 @@ struct InboxRowView: View {
             }
             
             HStack {
-                Text("Testerday")
+                Text("Yesterday")
                 
                 Image(systemName: "chevron.right")
             }

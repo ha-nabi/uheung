@@ -18,7 +18,8 @@ struct MainView: View {
                         Image(systemName: "magnifyingglass")
                             .foregroundStyle(.gray)
                         
-                        TextField("Search", text: $searchText)
+                        TextField("사진, 사람들, 장소...", text: $searchText)
+                            .font(.subheadline)
                     }
                     .padding(.horizontal, 15)
                     .padding(.vertical, 10)
@@ -27,14 +28,22 @@ struct MainView: View {
                     Button(action: {}, label: {
                         Image(systemName: "line.3.horizontal")
                             .font(.title)
-                            .foregroundStyle(.gray)
+                            .foregroundStyle(.orange)
                     })
                 }
-                Text("AppSchool 3rd \nGallery")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding([.top, .leading], 10)
+                HStack {
+                    Rectangle()
+                        .frame(maxWidth: .infinity, maxHeight: 0.5)
+                        .foregroundStyle(.gray.opacity(0.3))
+                }
+                .padding([.bottom, .top], 10)
+                
+                Text("2023년 10월 27일")
+                    .font(.footnote)
+//                    .fontWeight(.)
+                    .frame(maxWidth: .infinity, maxHeight: 0, alignment: .leading)
+                    .foregroundColor(.gray)
+                    .padding([.leading, .top], 15)
                 
                 // Parallax Carouael
                 GeometryReader(content: { geometry in
@@ -83,7 +92,6 @@ struct MainView: View {
             .padding(15)
         }
         .scrollIndicators(.hidden)
-        
     }
     
     // Overlay View

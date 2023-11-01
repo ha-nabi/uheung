@@ -9,21 +9,21 @@ import SwiftUI
 
 /// Tab's
 enum Tab: String, CaseIterable {
-    case home = "bird"
-    case favorite = "heart"
-    case chat = "paperplane"
-    case profile = "person.crop.circle"
+    case home = "house.fill"
+    case favorite = "heart.fill"
+    case chat = "paperplane.fill"
+    case profile = "person.crop.circle.fill"
     
     var title: String {
         switch self {
         case .home:
-            return "Home"
+            return "홈"
         case .favorite:
-            return "Favorite"
+            return "즐겨찾기"
         case .chat:
-            return "Chat"
+            return "대화"
         case .profile:
-            return "Profile"
+            return "프로필"
         }
     }
 }

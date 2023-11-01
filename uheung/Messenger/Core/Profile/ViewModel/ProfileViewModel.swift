@@ -11,7 +11,11 @@ import PhotosUI
 // 이미지 선택 해서 불러오기
 class ProfileViewModel: ObservableObject {
     @Published var selectedItem: PhotosPickerItem? {
-        didSet { Task { try await loadImage() }  }
+        didSet {
+            Task {
+                try await loadImage()
+            }
+        }
     }
     
     @Published var profileImage: Image?

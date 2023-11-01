@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject var viewModel = LoginViewModel()
     
     var body: some View {
         NavigationStack {
@@ -26,14 +26,14 @@ struct LoginView: View {
                 // text fields
                 
                 VStack {
-                    TextField("사용자 이름, 또는 이메일", text: $email)
+                    TextField("사용자 이름, 또는 이메일", text: $viewModel.email)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                         .padding(.horizontal, 24)
                     
-                    SecureField(" 비밀번호", text: $password)
+                    SecureField(" 비밀번호", text: $viewModel.password)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray6))
@@ -44,27 +44,28 @@ struct LoginView: View {
                 //forgot password
                 
                 Button {
-                    print("Forgot password")
+                    
                 } label: {
                     Text("비밀번호를 잊으셨나요?")
                         .font(.footnote)
                         .fontWeight(.semibold)
                         .padding(.top)
                         .padding(.trailing, 28)
+                        .foregroundStyle(.gray)
                 }
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 
                 // login button
                 
                 Button {
-                    
+                    Task { try await viewModel.login() } 
                 } label: {
                     Text("로그인")
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .frame(width: 360, height: 44)
-                        .background(Color(.systemBlue))
+                        .background(Color(.systemOrange))
                         .cornerRadius(10)
                 }
                 .padding(.vertical)
@@ -92,7 +93,7 @@ struct LoginView: View {
                     Text("Google으로 로그인")
                         .font(.footnote)
                         .fontWeight(.semibold)
-                        .foregroundColor(Color(.systemBlue))
+                        .foregroundColor(Color(.systemGray))
                 }
                 .padding(.top, 8)
                 
@@ -106,9 +107,11 @@ struct LoginView: View {
                 } label: {
                     HStack(spacing: 3) {
                         Text("계정이 없으신가요?")
+                            .foregroundStyle(.orange)
                         
                         Text("가입하기")
                             .fontWeight(.semibold)
+                            .foregroundStyle(.orange)
                     }
                     .font(.footnote)
                 }

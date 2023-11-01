@@ -27,7 +27,7 @@ struct ActiveNowView: View {
                             }
                         }
                         
-                        Text("홍세희")
+                        Text("강어흥")
                             .font(.subheadline)
                             .foregroundColor(.gray)
                     }

@@ -13,6 +13,7 @@ struct InboxView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
+                // 상단 바
                 ActiveNowView()
                 
                 List {
@@ -36,7 +37,7 @@ struct InboxView: View {
                             CircularProfileImageView(user: user, size: .xSmall)
                         }
                         
-                        Text("채팅")
+                        Text("Chat")
                             .font(.title2)
                             .fontWeight(.semibold)
                     }
